@@ -34,3 +34,20 @@ if __name__ == "__main__":
       count_down(next)
 
   count_down(3)
+
+  # Using a recursive function to calculate the sum of a sequence
+
+  def sum(n):
+    total = 0
+    for number in range(n + 1):
+      total += number
+
+    return total
+  print(sum(100))
+
+  def sum_recursive(n):
+    if n == 0:
+      return 0
+
+    return n + sum_recursive(n - 1)
+  print(sum_recursive(100))
