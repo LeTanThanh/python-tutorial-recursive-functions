@@ -18,3 +18,19 @@ if __name__ == "__main__":
   #   else:
   #     fn()
   #   # ...
+
+  # Python recursive function examples
+
+  # A simple recursive function example in Python
+
+  def count_down(start):
+    """Count down from a number"""
+    print(start)
+
+    # call the count_down if the next
+    # number is greater than 0
+    next = start - 1
+    if (next > 0):
+      count_down(next)
+
+  count_down(3)
